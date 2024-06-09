@@ -1,4 +1,4 @@
-import {Modal, Button} from '@gravity-ui/uikit';
+import {Modal, Button, Text} from '@gravity-ui/uikit';
 import { useState } from 'react';
 import { ColorPicker } from '@wellbees/color-picker-input'
 
@@ -27,10 +27,11 @@ export function ChangeSettingsModal({
 
     return (
         <Modal open={changeSettingsOpen} onClose={handleCloseModal}>
-            <div>
-                Изменить стилевые настройки
+            <div className='modal'>
+                <div>
+                <Text variant="subheader-2">Изменить стилевые настройки</Text>
             </div>
-            <div>
+            <div className='modal-content'>
                 <div>
                     Цвет заливки вершин кластера:
                     <ColorPicker 
@@ -88,6 +89,8 @@ export function ChangeSettingsModal({
                     />
                 </div>
             </div>
+            </div>
+            
         </Modal>
     );
 }

@@ -1,0 +1,53 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.horizontal-container {
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 auto;
+}
+
+.horizontal-container1 {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    overflow: hidden;
+}
+
+.graph {
+    height: 96%;
+    width: 100%;
+}
+
+.graph-inside {
+    height: 100%;
+    width: 100%;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.modal {
+    padding: 15px;
+}
+
+.modal-content {
+    padding-top: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}

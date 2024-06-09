@@ -16,7 +16,7 @@ export function ResultAlert({
         <div>
             { 
                 resultAlertOpen && (
-                    <Alert 
+                    <Alert style={{width: '30%'}}
                         theme={resultAlertType} 
                         title={resultAlertTitle} 
                         message={resultAlertMessage} 

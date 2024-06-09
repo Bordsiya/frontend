@@ -53,7 +53,7 @@ export function GraphModal({ open, id, label, data, source, target }) {
                             && data.recommendedPhotos.length !== 0 &&
                             (
                             <>
-                                <span>Рекомендации по фотографиям:</span>
+                                <span>Рекомендованные фотографии:</span>
                                 <ul>
                                     {
                                         data.recommendedPhotos.map((photo, index) => (
@@ -71,7 +71,7 @@ export function GraphModal({ open, id, label, data, source, target }) {
                                 && data.recommendedGroups.length !== 0 &&
                             (
                                 <>
-                                    <span>Рекомендации по группам:</span>
+                                    <span>Рекомендованные группы:</span>
                                     <ul>
                                         {
                                             data.recommendedGroups.map((group, index) => (
@@ -92,7 +92,7 @@ export function GraphModal({ open, id, label, data, source, target }) {
                                 && data.recommendedFriends.length !== 0 && 
                             (
                                 <>
-                                    <span>Рекомендации по друзьям:</span>
+                                    <span>Рекомендованные друзья:</span>
                                     <ul>
                                         {
                                             data.recommendedFriends.map((friend, index) => (
@@ -115,11 +115,8 @@ export function GraphModal({ open, id, label, data, source, target }) {
                 open && source !== undefined && target !== undefined && (
                     <Card view='raised'>
                         <div>
-                            ID: {id}
-                        </div>
-                        <div>
-                            Source: {source}
-                            Target: {target}
+                            ID источника: {source}
+                            ID цели: {target}
                         </div>
                         <div>
                             {
